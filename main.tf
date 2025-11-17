@@ -88,6 +88,6 @@ resource "aws_security_group" "public_sg" {
 }
 
 resource "aws_key_pair" "mykeypair-pub" {
-  key_name   = "mykeypair-pub"
-  public_key = file("C:/Users/Zeeshan ahmed/.ssh/id_ed25519.pub")
+  key_name   = "mykeypair"
+  public_key = file("~/.ssh/id_ed25519.pub")
 }
